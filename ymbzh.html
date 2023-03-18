@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>烈焰盒子-原神工具箱(网页端) | 灵魂-烈焰之杖工作室</title>
+        <Link Rel="SHORTCUT ICON" href="https://idhaname.github.io/download/assets/studio.png">
+        <link rel="alternate stylesheet" type="text/css" title="Light" href="yslight.css" />
+        <link rel="stylesheet" type="text/css" title="Dark" href="ysdark.css" />
+        <script>
+            console.info("灵魂-烈焰之杖工作室")
+            console.info("Soul-Blaze rod Studios")
+            console.info("Powered by SBLZUI (M↓H5)")
+            console.info("  [][]    [][][]    []      [][][]\n[]        []    []  []          []\n  [][]    [][][]    []        []  \n      []  []    []  []      []    \n[][][]    [][][]    [][][]  [][][]")
+        </script>
+        <script type="text/javascript">
+            //别看了，网上抄的
+            function setStyle(title) {
+                //预定义变量
+                var i, links;
+                //用DOM方法获得所有的link元素
+                links = document.getElementsByTagName("link");
+                for(i=0; links[i]; i++) {
+                    //判断此link元素的rel属性中是否有style关键字
+                    //即此link元素是否为样式表link
+                    //同时判断此link元素是否含有title属性
+                    if(links[i].getAttribute("rel").indexOf("style") != -1 && links[i].getAttribute("title")) {
+                        //先不管三七二十一把它设为disabled
+                        links[i].disabled = true;
+                        //再判断它的title中是否有我们指定的关键字
+                        if(links[i].getAttribute("title").indexOf(title) != -1)
+                        //如果有则将其激活
+                        links[i].disabled = false;
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>译名对照</h1>
+        <p>选择左侧（或上侧）窗口的语言：
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - CHS.txt'">CHS</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - CHT.txt'">CHT</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - DE.txt'">DE</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - EN.txt'">EN</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - ES.txt'">ES</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - FR.txt'">FR</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - ID.txt'">ID</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - JP.txt'">JP</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - KR.txt'">KR</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - PT.txt'">PT</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - RU.txt'">RU</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - TH.txt'">TH</button>
+            <button onclick="uiframel.src='./GM Handbook/GM Handbook - VI.txt'">VI</button>
+        </p>
+        <p>选择右侧（或下侧）窗口的语言：
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - CHS.txt'">CHS</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - CHT.txt'">CHT</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - DE.txt'">DE</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - EN.txt'">EN</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - ES.txt'">ES</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - FR.txt'">FR</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - ID.txt'">ID</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - JP.txt'">JP</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - KR.txt'">KR</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - PT.txt'">PT</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - RU.txt'">RU</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - TH.txt'">TH</button>
+            <button onclick="uiframer.src='./GM Handbook/GM Handbook - VI.txt'">VI</button>
+        </p>
+        <center><p><iframe id="uiframel" src="" style="min-width:calc(48vw);min-height:calc(95vh);vertical-align:left;margin-right:5px;" framespacing="0" allowfullscreen="true"> </iframe><iframe id="uiframer" src="" style="min-width:calc(48vw);min-height:calc(95vh);vertical-align:right;margin-left:5px" framespacing="0" allowfullscreen="true"> </iframe></p></center>
+        <footer>
+            <p class="foot"><a href="https://SBLZsoft.github.io/ysupdlog"target="_blank"class="footerclearcss">更新日志</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/SBLZsoft/SBLZsoft.github.io/"target="_blank"class="footerclearcss">GitHub</a>&nbsp;&nbsp;&nbsp;Powered by SBLZUI (M↓H5)</br>
+            颜色模式热切换：<button id=light type="button" onclick="setStyle('Light');">浅色模式</button><button id=dark type="button" onclick="setStyle('Dark');">深色模式</button></p>
+            <p class="foot">建议使用屏幕分辨率为1280x720以上的电脑访问本网页。否则本网页的部分功能可能无法正常工作。</br>
+            不建议使用过时的浏览器访问。<a href="updatebrowser.html"target="_blank"class="footerclearcss">查看详情</a></p>
+            <p class="foot"><img alt="灵魂-烈焰之杖工作室的Logo" class="studioimg"src="https://idhaname.github.io/download/assets/studio.png">灵魂-烈焰之杖工作室 -- Soul-Blaze rod Studios</p>
+        </footer>
+    </body>
+</html>
