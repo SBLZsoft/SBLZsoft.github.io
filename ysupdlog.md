@@ -6,7 +6,6 @@
 - GitHub Pages镜像站恢复可用
   - GitHub的存储库将仅作为镜像使用
 
-
 ### 2023-03-18 迁移到GitLab
 - 将所有相关链接指向GitLab存储库
 - GitHub Pages镜像站已不再可用
